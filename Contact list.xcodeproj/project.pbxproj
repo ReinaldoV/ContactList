@@ -21,6 +21,7 @@
 		9EF2CFCF252490F800A3D1A1 /* ContactListStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CFCE252490F800A3D1A1 /* ContactListStoryBoard.storyboard */; };
 		9EF2CFD52524911900A3D1A1 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CFD42524911900A3D1A1 /* ContactListCell.swift */; };
 		9EF2CFDA2524912B00A3D1A1 /* ContactListCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CFD92524912B00A3D1A1 /* ContactListCellView.xib */; };
+		9EF2CFDF2524963100A3D1A1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CFDE2524963100A3D1A1 /* ContactViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9EF2CFCE252490F800A3D1A1 /* ContactListStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactListStoryBoard.storyboard; sourceTree = "<group>"; };
 		9EF2CFD42524911900A3D1A1 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
 		9EF2CFD92524912B00A3D1A1 /* ContactListCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListCellView.xib; sourceTree = "<group>"; };
+		9EF2CFDE2524963100A3D1A1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		9EF2CFBB2524906C00A3D1A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9EF2CFDE2524963100A3D1A1 /* ContactViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF2CF9A25248D4D00A3D1A1 /* AppCoordinator.swift in Sources */,
+				9EF2CFDF2524963100A3D1A1 /* ContactViewModel.swift in Sources */,
 				9EF2CFBD252490BF00A3D1A1 /* ContactListInteractor.swift in Sources */,
 				9EF2CF67252488E900A3D1A1 /* AppDelegate.swift in Sources */,
 				9EF2CFD52524911900A3D1A1 /* ContactListCell.swift in Sources */,

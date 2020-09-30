@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="WW1-Vs-AVH">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="WW1-Vs-AVH" customClass="ContactListCell" customModule="Contact_list" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WW1-Vs-AVH" id="IBB-iH-ajK">
@@ -47,6 +47,11 @@
                     <constraint firstItem="ZZI-hL-uiA" firstAttribute="top" secondItem="IBB-iH-ajK" secondAttribute="top" constant="5" id="vOC-GO-OKQ"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contactImageView" destination="ZZI-hL-uiA" id="hY7-KJ-7aN"/>
+                <outlet property="nameLabel" destination="bD2-F5-a2C" id="zXs-kM-zVt"/>
+                <outlet property="phoneLabel" destination="p47-BS-2WA" id="1IT-Vh-kcQ"/>
+            </connections>
             <point key="canvasLocation" x="24.637681159420293" y="60.267857142857139"/>
         </tableViewCell>
     </objects>
