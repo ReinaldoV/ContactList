@@ -13,7 +13,7 @@ class ContactListViewController: UIViewController {
     @IBOutlet weak var table: UITableView!
 
     static func instantiate() -> ContactListViewController {
-        let nib = UINib(nibName: "ContactListView", bundle:nil)
+        let nib = UINib(nibName: "ContactListView", bundle: nil)
         let viewController = nib.instantiate(withOwner: self, options: nil)[0] as? ContactListViewController
         return viewController ?? ContactListViewController()
     }
@@ -21,6 +21,7 @@ class ContactListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
+        table.dataSource = self
         self.title = "Contact list"
         let contactListCellNib = UINib(nibName: "ContactListCellView", bundle: nil)
         table.register(contactListCellNib, forCellReuseIdentifier: cellIdentifier)

@@ -13,14 +13,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var appCoordinator: AppCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+
         if let windowScene = scene as? UIWindowScene {
-
             let window = UIWindow(windowScene: windowScene)
-            if let window = self.window {
-                self.appCoordinator = AppCoordinator(window: window)
-                self.appCoordinator?.start()
-            }
-
+            self.appCoordinator = AppCoordinator(window: window)
+            self.appCoordinator?.start()
             self.window = window
             window.makeKeyAndVisible()
         }
