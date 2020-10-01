@@ -19,20 +19,25 @@ class ContactListViewController: UIViewController {
     private let cellIdentifier = "ContactListCell"
     var presenter: ContactListPresenterProtocol?
 
-    static func instantiate() -> ContactListViewController {
+    static func instantiate(presenter: ContactListPresenterProtocol) -> ContactListViewController {
         let nib = UINib(nibName: "ContactListView", bundle: nil)
         let viewController = nib.instantiate(withOwner: self, options: nil)[0] as? ContactListViewController
+        viewController?.presenter = presenter
         return viewController ?? ContactListViewController()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         self.title = "Contact list"
         let contactListCellNib = UINib(nibName: "ContactListCellView", bundle: nil)
         table.register(contactListCellNib, forCellReuseIdentifier: cellIdentifier)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.loadContacts()
     }
 }
 

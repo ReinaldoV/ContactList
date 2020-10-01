@@ -27,7 +27,10 @@ class AppCoordinator {
     }
 
     private func showContactsViewController() {
-        let viewController = ContactListViewController.instantiate()
+        let interactor = ContactListInteractor(contactsService: ContactsService())
+        let presenter = ContactListPresenter(interactor: interactor)
+        let viewController = ContactListViewController.instantiate(presenter: presenter)
+        presenter.viewController = viewController
         self.navigationController.viewControllers = [viewController]
     }
 

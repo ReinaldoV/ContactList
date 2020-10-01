@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ContactListPresenterProtocol {
-    func viewDidLoad()
+    func loadContacts()
     func numberOfRows() -> Int
     func contactInfo(atIndex index: Int) -> ContactViewModel?
 }
@@ -26,7 +26,12 @@ class ContactListPresenter {
 
 extension ContactListPresenter: ContactListPresenterProtocol {
 
-    func viewDidLoad() {
+    func loadContacts() {
+        if !contacts.isEmpty {
+            DispatchQueue.main.async {
+                self.viewController?.reloadTable()
+            }
+        }
         self.interactor.loadContacts { contactsResponse in
             DispatchQueue.main.async {
                 self.contacts = contactsResponse
