@@ -14,5 +14,5 @@ struct Contact: Codable {
     let phoneNumber: String?
     let jobTitle: String?
     let age: Int?
-    let avatarURL: String?
+    let avatarURL: URL?
 }

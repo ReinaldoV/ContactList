@@ -9,7 +9,7 @@ import Foundation
 
 class ContactsService {
 
-    func getContacts(onSuccess: @escaping ([ContactServiceDTO]) -> Void,
+    func getContacts(onSuccess: @escaping ([Contact]) -> Void,
                      onError: @escaping (_ error: Error?) -> Void) {
 
         var urlComponents = URLComponents()
@@ -30,7 +30,8 @@ class ContactsService {
                 decoder.dateDecodingStrategy = .formatted(self.dateFormat())
                 do {
                     let contactsResponse = try decoder.decode(Array<ContactServiceDTO>.self, from: jsonData)
-                    onSuccess(contactsResponse)
+                    let contactsList = contactsResponse.map { $0.transformToContact() }
+                    onSuccess(contactsList)
                 } catch {
                     onError(error)
                 }

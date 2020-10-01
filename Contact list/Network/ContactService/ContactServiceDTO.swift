@@ -14,7 +14,7 @@ struct ContactServiceDTO: Codable {
     let phoneNumber: String?
     let jobTitle: String?
     let age: Int?
-    let avatar: String?
+    let avatar: URL?
     
     func transformToContact() -> Contact {
         return Contact(dateAdded: self.dateAdded,
