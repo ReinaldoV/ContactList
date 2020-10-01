@@ -18,11 +18,17 @@ struct Contact {
     let cachedImage: CachedImage
 }
 
-class CachedImage {
+class CachedImage: Equatable {
+
     let avatarURL: URL?
     var avatar: UIImage?
 
     init(urlImage: URL?) {
         self.avatarURL = urlImage
+    }
+
+
+    static func == (lhs: CachedImage, rhs: CachedImage) -> Bool {
+        lhs.avatarURL == rhs.avatarURL && lhs.avatar == rhs.avatar
     }
 }

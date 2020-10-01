@@ -14,12 +14,12 @@
 		9E02C208252657F300B7BBAB /* ContactDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C207252657F300B7BBAB /* ContactDetailPresenter.swift */; };
 		9E02C210252657FF00B7BBAB /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C20F252657FF00B7BBAB /* ContactDetailViewController.swift */; };
 		9E02C215252658A100B7BBAB /* ContactDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E02C214252658A100B7BBAB /* ContactDetailViewController.xib */; };
+		9E02C23A25267A7500B7BBAB /* ContactDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C23925267A7500B7BBAB /* ContactDetailPresenterTest.swift */; };
 		9EF2CF67252488E900A3D1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */; };
 		9EF2CF69252488E900A3D1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */; };
 		9EF2CF6E252488E900A3D1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CF6C252488E900A3D1A1 /* Main.storyboard */; };
 		9EF2CF70252488EE00A3D1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CF6F252488EE00A3D1A1 /* Assets.xcassets */; };
 		9EF2CF73252488EE00A3D1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CF71252488EE00A3D1A1 /* LaunchScreen.storyboard */; };
-		9EF2CF7E252488EE00A3D1A1 /* Contact_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF7D252488EE00A3D1A1 /* Contact_listTests.swift */; };
 		9EF2CF89252488EE00A3D1A1 /* Contact_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF88252488EE00A3D1A1 /* Contact_listUITests.swift */; };
 		9EF2CF9A25248D4D00A3D1A1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF9925248D4D00A3D1A1 /* AppCoordinator.swift */; };
 		9EF2CFBD252490BF00A3D1A1 /* ContactListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CFBC252490BF00A3D1A1 /* ContactListInteractor.swift */; };
@@ -56,6 +56,7 @@
 		9E02C207252657F300B7BBAB /* ContactDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailPresenter.swift; sourceTree = "<group>"; };
 		9E02C20F252657FF00B7BBAB /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		9E02C214252658A100B7BBAB /* ContactDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailViewController.xib; sourceTree = "<group>"; };
+		9E02C23925267A7500B7BBAB /* ContactDetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailPresenterTest.swift; sourceTree = "<group>"; };
 		9EF2CF63252488E900A3D1A1 /* Contact list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		9EF2CF72252488EE00A3D1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF2CF74252488EE00A3D1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EF2CF79252488EE00A3D1A1 /* Contact listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contact listTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EF2CF7D252488EE00A3D1A1 /* Contact_listTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_listTests.swift; sourceTree = "<group>"; };
 		9EF2CF7F252488EE00A3D1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EF2CF84252488EE00A3D1A1 /* Contact listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contact listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF2CF88252488EE00A3D1A1 /* Contact_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_listUITests.swift; sourceTree = "<group>"; };
@@ -155,6 +155,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		9E02C23825267A4D00B7BBAB /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9E02C23925267A7500B7BBAB /* ContactDetailPresenterTest.swift */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
 		9EF2CF5A252488E900A3D1A1 = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +204,7 @@
 		9EF2CF7C252488EE00A3D1A1 /* Contact listTests */ = {
 			isa = PBXGroup;
 			children = (
-				9EF2CF7D252488EE00A3D1A1 /* Contact_listTests.swift */,
+				9E02C23825267A4D00B7BBAB /* ContactDetail */,
 				9EF2CF7F252488EE00A3D1A1 /* Info.plist */,
 			);
 			path = "Contact listTests";
@@ -336,6 +344,7 @@
 					};
 					9EF2CF78252488EE00A3D1A1 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = 9EF2CF62252488E900A3D1A1;
 					};
 					9EF2CF83252488EE00A3D1A1 = {
@@ -420,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EF2CF7E252488EE00A3D1A1 /* Contact_listTests.swift in Sources */,
+				9E02C23A25267A7500B7BBAB /* ContactDetailPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +635,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHMPSR3FEL;
 				INFOPLIST_FILE = "Contact listTests/Info.plist";
@@ -637,6 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "reinaldovillajavi.Contact-listTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contact list.app/Contact list";
@@ -648,6 +659,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHMPSR3FEL;
 				INFOPLIST_FILE = "Contact listTests/Info.plist";
