@@ -10,5 +10,5 @@ import UIKit
 struct ContactViewModel {
     let name: String?
     let phone: String?
-    let imageUrl: URL?
+    let cachedImage: CachedImage?
 }

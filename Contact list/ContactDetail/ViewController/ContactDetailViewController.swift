@@ -16,7 +16,7 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var jobLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+
 
     var presenter: ContactDetailPresenterProtocol?
 
@@ -35,7 +35,7 @@ class ContactDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = presenter?.name()
-        imageView.load(url: presenter?.imageURL())
+        imageView.load(cachedImage: presenter?.image())
         nameLabel.text = presenter?.name()
         phoneLabel.text = presenter?.phone()
         emailLabel.text = presenter?.email()

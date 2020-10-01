@@ -59,7 +59,7 @@ extension ContactListPresenter: ContactListPresenterProtocol {
         guard index < contacts.count && index >= 0 else { return nil }
         return ContactViewModel(name: contacts[index].name,
                                 phone: contacts[index].phoneNumber,
-                                imageUrl: contacts[index].avatarURL)
+                                cachedImage: contacts[index].cachedImage)
     }
 
     func cellTapped(atIndex index: Int) {

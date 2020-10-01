@@ -14,7 +14,7 @@ protocol ContactDetailPresenterProtocol {
     func age() -> String
     func job() -> String
     func date() -> String
-    func imageURL() -> URL?
+    func image() -> CachedImage?
 }
 
 class ContactDetailPresenter {
@@ -51,7 +51,7 @@ extension ContactDetailPresenter: ContactDetailPresenterProtocol {
         return contact.dateAdded?.description ?? ""
     }
 
-    func imageURL() -> URL? {
-        return contact.avatarURL
+    func image() -> CachedImage? {
+        return contact.cachedImage
     }
 }

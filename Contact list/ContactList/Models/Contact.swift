@@ -6,13 +6,23 @@
 //
 
 import Foundation
+import UIKit
 
-struct Contact: Codable {
+struct Contact {
     let dateAdded: Date?
     let name: String?
     let email: String?
     let phoneNumber: String?
     let jobTitle: String?
     let age: Int?
+    let cachedImage: CachedImage
+}
+
+class CachedImage {
     let avatarURL: URL?
+    var avatar: UIImage?
+
+    init(urlImage: URL?) {
+        self.avatarURL = urlImage
+    }
 }

@@ -15,7 +15,7 @@ struct ContactServiceDTO: Codable {
     let jobTitle: String?
     let age: Int?
     let avatar: URL?
-    
+
     func transformToContact() -> Contact {
         return Contact(dateAdded: self.dateAdded,
                        name: self.name,
@@ -23,6 +23,6 @@ struct ContactServiceDTO: Codable {
                        phoneNumber: self.phoneNumber,
                        jobTitle: self.jobTitle,
                        age: self.age,
-                       avatarURL: self.avatar)
+                       cachedImage: CachedImage(urlImage: self.avatar))
     }
 }

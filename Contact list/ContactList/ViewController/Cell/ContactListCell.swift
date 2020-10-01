@@ -14,7 +14,7 @@ class ContactListCell: UITableViewCell {
     @IBOutlet weak var phoneLabel: UILabel!
 
     func configureCell(withInfo model: ContactViewModel?) {
-        contactImageView.load(url: model?.imageUrl)
+        contactImageView.load(cachedImage: model?.cachedImage)
         nameLabel.text = model?.name
         phoneLabel.text = model?.phone
     }
