@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E02C1C625263DA500B7BBAB /* ContactServiceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C1C525263DA400B7BBAB /* ContactServiceDTO.swift */; };
+		9E02C1CE25263EB900B7BBAB /* ContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C1CD25263EB900B7BBAB /* ContactsService.swift */; };
 		9EF2CF67252488E900A3D1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */; };
 		9EF2CF69252488E900A3D1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */; };
 		9EF2CF6E252488E900A3D1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CF6C252488E900A3D1A1 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E02C1C525263DA400B7BBAB /* ContactServiceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactServiceDTO.swift; sourceTree = "<group>"; };
+		9E02C1CD25263EB900B7BBAB /* ContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsService.swift; sourceTree = "<group>"; };
 		9EF2CF63252488E900A3D1A1 /* Contact list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E02C1C325263D7600B7BBAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9E02C1C425263D8800B7BBAB /* ContactService */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9E02C1C425263D8800B7BBAB /* ContactService */ = {
+			isa = PBXGroup;
+			children = (
+				9E02C1C525263DA400B7BBAB /* ContactServiceDTO.swift */,
+				9E02C1CD25263EB900B7BBAB /* ContactsService.swift */,
+			);
+			path = ContactService;
+			sourceTree = "<group>";
+		};
 		9EF2CF5A252488E900A3D1A1 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +134,7 @@
 		9EF2CF65252488E900A3D1A1 /* Contact list */ = {
 			isa = PBXGroup;
 			children = (
+				9E02C1C325263D7600B7BBAB /* Network */,
 				9EF2CFB62524902200A3D1A1 /* ContactList */,
 				9EF2CF9925248D4D00A3D1A1 /* AppCoordinator.swift */,
 				9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */,
@@ -331,12 +353,14 @@
 			files = (
 				9EF2CF9A25248D4D00A3D1A1 /* AppCoordinator.swift in Sources */,
 				9EF2CFDF2524963100A3D1A1 /* ContactViewModel.swift in Sources */,
+				9E02C1C625263DA500B7BBAB /* ContactServiceDTO.swift in Sources */,
 				9EF2CFBD252490BF00A3D1A1 /* ContactListInteractor.swift in Sources */,
 				9EF2CF67252488E900A3D1A1 /* AppDelegate.swift in Sources */,
 				9EF2CFD52524911900A3D1A1 /* ContactListCell.swift in Sources */,
 				9EF2CF69252488E900A3D1A1 /* SceneDelegate.swift in Sources */,
 				9EF2CFC5252490CA00A3D1A1 /* ContactListPresenter.swift in Sources */,
 				9EF2CFCA252490D500A3D1A1 /* ContactListViewController.swift in Sources */,
+				9E02C1CE25263EB900B7BBAB /* ContactsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
