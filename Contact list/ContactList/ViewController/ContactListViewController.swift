@@ -59,7 +59,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Add functionality
+        presenter?.cellTapped(atIndex: indexPath.row)
     }
 }
 
