@@ -30,6 +30,7 @@ class ContactListViewController: UIViewController {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        table.separatorStyle = .none
         self.title = "Contact list"
         let contactListCellNib = UINib(nibName: "ContactListCellView", bundle: nil)
         table.register(contactListCellNib, forCellReuseIdentifier: cellIdentifier)
