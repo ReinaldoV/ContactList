@@ -29,10 +29,12 @@ class ContactDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.layer.cornerRadius = imageView.frame.height / 2
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = presenter?.name()
         imageView.load(url: presenter?.imageURL())
         nameLabel.text = presenter?.name()
         phoneLabel.text = presenter?.phone()
