@@ -15,4 +15,14 @@ struct ContactServiceDTO: Codable {
     let jobTitle: String?
     let age: Int?
     let avatar: String?
+    
+    func transformToContact() -> Contact {
+        return Contact(dateAdded: self.dateAdded,
+                       name: self.name,
+                       email: self.email,
+                       phoneNumber: self.phoneNumber,
+                       jobTitle: self.jobTitle,
+                       age: self.age,
+                       avatarURL: self.avatar)
+    }
 }
