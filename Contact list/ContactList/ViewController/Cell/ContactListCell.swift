@@ -13,10 +13,10 @@ class ContactListCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
 
-    func configureCell(withInfo model: ContactViewModel) {
-        contactImageView.image = model.image
-        nameLabel.text = model.name
-        phoneLabel.text = model.phone
+    func configureCell(withInfo model: ContactViewModel?) {
+        contactImageView.load(url: model?.imageUrl)
+        nameLabel.text = model?.name
+        phoneLabel.text = model?.phone
     }
 
     override func layoutSubviews() {
