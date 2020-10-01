@@ -18,6 +18,7 @@
 		9E02C23F25267D8E00B7BBAB /* ContactDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C23E25267D8E00B7BBAB /* ContactDetailViewControllerTest.swift */; };
 		9E02C2452526809200B7BBAB /* ContactListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C2442526809200B7BBAB /* ContactListInteractorTest.swift */; };
 		9E02C24D2526823500B7BBAB /* ContactListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C24C2526823500B7BBAB /* ContactListPresenterTest.swift */; };
+		9E02C2522526862C00B7BBAB /* ContactListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C2512526862C00B7BBAB /* ContactListViewControllerTest.swift */; };
 		9EF2CF67252488E900A3D1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */; };
 		9EF2CF69252488E900A3D1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */; };
 		9EF2CF6E252488E900A3D1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF2CF6C252488E900A3D1A1 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		9E02C23E25267D8E00B7BBAB /* ContactDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewControllerTest.swift; sourceTree = "<group>"; };
 		9E02C2442526809200B7BBAB /* ContactListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListInteractorTest.swift; sourceTree = "<group>"; };
 		9E02C24C2526823500B7BBAB /* ContactListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPresenterTest.swift; sourceTree = "<group>"; };
+		9E02C2512526862C00B7BBAB /* ContactListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewControllerTest.swift; sourceTree = "<group>"; };
 		9EF2CF63252488E900A3D1A1 /* Contact list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF2CF66252488E900A3D1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF2CF68252488E900A3D1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				9E02C2442526809200B7BBAB /* ContactListInteractorTest.swift */,
 				9E02C24C2526823500B7BBAB /* ContactListPresenterTest.swift */,
+				9E02C2512526862C00B7BBAB /* ContactListViewControllerTest.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			files = (
 				9E02C23F25267D8E00B7BBAB /* ContactDetailViewControllerTest.swift in Sources */,
 				9E02C24D2526823500B7BBAB /* ContactListPresenterTest.swift in Sources */,
+				9E02C2522526862C00B7BBAB /* ContactListViewControllerTest.swift in Sources */,
 				9E02C23A25267A7500B7BBAB /* ContactDetailPresenterTest.swift in Sources */,
 				9E02C2452526809200B7BBAB /* ContactListInteractorTest.swift in Sources */,
 			);

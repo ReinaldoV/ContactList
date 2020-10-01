@@ -12,7 +12,7 @@ class ContactListPresenterTest: XCTestCase {
 
     var sut: ContactListPresenter!
     var interactorMock: ContactListInteractorMock!
-    var viewMock: ContactListViewController!
+    var viewMock: ContactListViewControllerMock!
     var delegateMock: ContactListDelegateMock!
 
     override func setUp() {
@@ -27,7 +27,7 @@ class ContactListPresenterTest: XCTestCase {
 
     func createSut() {
         interactorMock = ContactListInteractorMock()
-        viewMock = ContactListViewController()
+        viewMock = ContactListViewControllerMock()
         delegateMock = ContactListDelegateMock()
         sut = ContactListPresenter(interactor: interactorMock)
         sut.viewController = viewMock
@@ -130,7 +130,7 @@ class ContactListInteractorMock: ContactListInteractorProtocol {
     }
 }
 
-class ContactListViewController: ContactListViewControllerProtocol {
+class ContactListViewControllerMock: ContactListViewControllerProtocol {
 
     var showErrorWasCalled = false
     var reloadTableWasCalled = false
