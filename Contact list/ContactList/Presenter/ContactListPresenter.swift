@@ -33,10 +33,8 @@ class ContactListPresenter {
 extension ContactListPresenter: ContactListPresenterProtocol {
 
     func loadContacts() {
-        if !contacts.isEmpty {
-            DispatchQueue.main.async {
-                self.viewController?.reloadTable()
-            }
+        guard contacts.isEmpty else {
+            return
         }
         self.interactor.loadContacts { contactsResponse in
             DispatchQueue.main.async {
